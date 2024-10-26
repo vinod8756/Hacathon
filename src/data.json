@@ -1,0 +1,361 @@
+{
+    "Rasberri_pi": [
+        {
+            "id": "RpseX2ylEuw",
+            "title": "Introduction and Parts - Raspberry Pi and Python tutorials p.1",
+            "duration": "10:44"
+        },
+        {
+            "id": "4z9trGhCbfk",
+            "title": "Installation and Setup of Operating System (Raspbian) - Raspberry Pi and Python tutorials p.2",
+            "duration": "16:11"
+        },
+        {
+            "id": "IDqQIDL3LKg",
+            "title": "Remote Access with SSH and Remote Desktop - Raspberry Pi and Python tutorials p.3",
+            "duration": "8:31"
+        },
+        {
+            "id": "GUvHA6zaVWU",
+            "title": "Terminal Commands and Navigation - Raspberry Pi and Python tutorials p.4",
+            "duration": "11:40"
+        },
+        {
+            "id": "qk1IVs5B1GI",
+            "title": "Camera Module - Raspberry Pi and Python tutorials p.5",
+            "duration": "9:08"
+        },
+        {
+            "id": "WLo5Rgvj6qo",
+            "title": "GPIO Basics with LED light - Raspberry Pi and Python tutorials p.6",
+            "duration": "10:30"
+        },
+        {
+            "id": "kqJ8WYQu68",
+            "title": "Distance Sensor GPIO cont'd - Raspberry Pi and Python tutorials p.7",
+            "duration": "6:11"
+        },
+        {
+            "id": "udu6i1I0mqQ",
+            "title": "Garage Stop Light GPIO project - Raspberry Pi and Python tutorials p.8",
+            "duration": "10:26"
+        }
+    ],
+    "Embedded_Systems": [
+        {
+            "id": "aC37UE7edP0",
+            "title": "How to Get Started Learning Embedded Systems",
+            "duration": "11:08"
+        },
+        {
+            "id": "Scs3oBY7dEo",
+            "title": "Blink! The Hello World of Embedded Systems.",
+            "duration": "17:59"
+        },
+        {
+            "id": "9Zyp4sdSUNM",
+            "title": "How to Blink an LED in C (avr, msp430)",
+            "duration": "16:36"
+        },
+        {
+            "id": "PtTVe0zfg_M",
+            "title": "How to Blink LEDs with Timers and Interrupts in C (MSP430, Arduino)",
+            "duration": "14:31"
+        },
+        {
+            "id": "L69eIm472nY",
+            "title": "How to wire-up and program a button. (digital inputs, microcontrollers)",
+            "duration": "7:52"
+        },
+        {
+            "id": "u58HG5n49Xk",
+            "title": "How to use an ADC (embedded example in C)",
+            "duration": "14:55"
+        },
+        {
+            "id": "9zU92H_CLVI",
+            "title": "Creating your own custom hardware (printed circuit boards)",
+            "duration": "12:35"
+        },
+        {
+            "id": "j3SwYvuR8oc",
+            "title": "A Few Embedded Systems Tips for Beginners",
+            "duration": "8:18"
+        },
+        {
+            "id": "3-L_91DFBm4",
+            "title": "Finding Parts for your Embedded Systems",
+            "duration": "08:29"
+        },
+        {
+            "id": "KQBBWvY-s0o",
+            "title": "What Actually is Embedded C/C++? Is it different from C/C++?",
+            "duration": "11:04"
+        },
+        {
+            "id": "m4agpY_w2y8",
+            "title": "Debugging Embedded Systems With GDB?",
+            "duration": "13:50"
+        },
+        {
+            "id": "L__eClqEyLg",
+            "title": "The Multiple Paths through Embedded Systems",
+            "duration": "29:03"
+        },
+        {
+            "id": "5x4p5KSoYOQ",
+            "title": "Embedded Crypto: AES Example on a Microcontroller (in C)",
+            "duration": "17:39"
+        },
+        {
+            "id": "Bd-xNEOXohs",
+            "title": "Are Pointers Bad for Embedded Systems?",
+            "duration": "5:06"
+        },
+        {
+            "id": "QMYBumkV7yY",
+            "title": "Why are my ADC readings messed up? (Arduino example)",
+            "duration": "5:43"
+        }
+    ],
+    "Arduino" : [
+                {
+                    "id": "JnJIKX5J0Cc",
+                    "title": "2023 Arduino Tutorial for Beginners 01 - Introduction",
+                    "duration": "10:21"
+                },
+                {
+                    "id": "SX8z3-BEuWQ",
+                    "title": "2023 Arduino Tutorial for Beginners 02 - Setting up the Arduino IDE for Absolute Beginners",
+                    "duration": "8:30"
+                },
+                {
+                    "id": "ynAvySNCi-0",
+                    "title": "2023 Arduino Tutorial for Beginners 03 - Hello World",
+                    "duration": "8:45"
+                },
+                {
+                    "id": "EVDnYnAyktw",
+                    "title": "22023 Arduino Tutorial for Beginners 04 - Program Structure",
+                    "duration": "13:35"
+                },
+                {
+                    "id": "m8ov5S78AlY",
+                    "title": "2023 Arduino Tutorial for Beginners 05 - Variable",
+                    "duration": "13:43"
+                },
+                {
+                    "id": "Q5A2vsa2B-g",
+                    "title": "2023 Arduino Tutorial for Beginners 06 - Digital Output 01 - LED Circuit",
+                    "duration": "18:53"
+                },
+                {
+                    "id": "oOBxocRbdbo",
+                    "title": "2023 Arduino Tutorial for Beginners 07 - Digital Output 02 - Build a LED Circuit",
+                    "duration": "13:35"
+                }
+    ],
+    
+
+    "Cyber_Security": [
+        {
+            "id": "z5nc9MDbvkw",
+            "title": "getting started with cyber security",
+            "duration": "38:19"
+
+        },
+        {
+            "title": "understanding common cyber threats",
+            "duration": "12:23",
+            "id": "awhqnSskWjU"
+        },
+        {
+            "title": "network security basics",
+            "duration": "27:25",
+            "id": "KjN64N6-_Sk"
+        },
+        {
+            "title": "setting up a secure home network",
+            "duration": "26:28",
+            "id": "m4uzeX-ChFw"
+        },
+        {
+            "title": "introduction to firewalls",
+            "duration": "8:32:17",
+            "id": "PIlLdEVZmNE&t=536sw"
+        },
+        {
+            "title": "using antivirus software effectively",
+            "duration": "2:06",
+            "id": "MUo_YMywWJI"
+        },
+        {
+            "title": "understanding encryption techniques",
+            "duration": "13:57",
+            "id": "o_g-M7UBqI8&t=687s"
+        },
+        {
+            "title": "building a basic secure application",
+            "duration": "1:00:45",
+            "id": "8Vsyl5KJFZw"
+        },
+        {
+            "title": "introduction to ethical hacking",
+            "duration": "7:14:29",
+            "id": "3FNYvj2U0HM"
+        },
+        {
+            "title": "using cyber security tools and software",
+            "duration": "2:33",
+            "id": "SW6AE76Pi50"
+        },
+        {
+            "title": "setting up a cyber security lab",
+            "duration": "13:16",
+            "id": "2XLzMb9oZBI"
+        },
+        {
+            "title": "troubleshooting common security issues",
+            "duration": "5:55",
+            "id": "6Nk-G6a19MU"
+        }
+    ],
+    "React_JS": [
+        {
+            "title": "Introduction To React",
+            "duration": "15:57",
+            "id": "MHn66JJH5zs"
+        },
+        {
+            "title": "Understanding Props and PropTypes in React",
+            "duration": "26:02",
+            "id": "xvm3X1oyTL8"
+        },
+        {
+            "title": "React Component Lifecycle & Lifecycle methods",
+            "duration": "15:56",
+            "id": "abjeWy4sZiU"
+        },
+        {
+            "title": "Event Handling",
+            "duration": "7:35",
+            "id": "Znqv84xi8Vs"
+        },
+        {
+            "title": "React Router",
+            "duration": "23:53",
+            "id": "oTIJunBa6MA"
+        },
+        {
+            "title": "Hooks",
+            "duration": "9:15",
+            "id": "esrFnNV5Btc"
+        }
+    ],
+    "Node_JS": [
+        {
+            "title": "Introduction & Setup",
+            "duration": "16:36",
+            "id": "zb3Qk8SG5Ms"
+        },
+        {
+            "title": "Node.js Basics",
+            "duration": "42:43",
+            "id": "OIBIXYLJjsI"
+        },
+        {
+            "title": "Requests & Responses",
+            "duration": "26:53",
+            "id": "DQD00NAUPNk"
+        },
+        {
+            "title": "NPM",
+            "duration": "16:48",
+            "id": "bdHE2wHT-gQ"
+        },
+        {
+            "title": "Express Apps",
+            "duration": "19:08",
+            "id": "Lr9WUkeYSA8"
+        },
+        {
+            "title": "View Engines",
+            "duration": "35:58",
+            "id": "yXEesONd_54"
+        }
+    ],
+    "agriculture": [
+        {
+          "title": "All Types Of Farming Explained",
+          "duration": "8:46",
+          "id": "yzs-LOJ1w08"
+        },
+        {
+          "title": "How to Start a Small Farm | A Step-by-Step Guide",
+          "duration": "17:56",
+          "id": "heTxEsrPVdQ"
+        },
+        {
+          "title": "Growing Tomatoes in the Dry Season: The Secret to Effective Drip Irrigation",
+          "duration": "12:25",
+          "id": "KjN64N6-_Sk"
+        },
+        {
+          "title": "Watermelon Planting Process, the journey of seeds from germination to abundant harvest",
+          "duration": "8:35",
+          "id": "UEe-lccsZEM"
+        },
+        {
+          "title": "How multilayer farming made this farm profitable",
+          "duration": "9:21",
+          "id": "c5pekMjAapo"
+        }
+      ],
+      "manufacture": [
+        {
+          "title": "Top 10 Small Machines for Manufacturing Businesses || The Ultimate List",
+          "duration": "10:59",
+          "id": "6MsM6S53lLQ"
+        },
+        {
+          "title": "PROFITABLE Startup In India, D2C Business, Marketing Strategy - Bellavita Founder |FO178 Raj Shamani",
+          "duration": "1:13:57",
+          "id": "Xc-y4eTyIQc"
+        },
+        {
+          "title": "How to start a clothing brand in India ft. Siddharth Dungarwal | Snitch | Business Talkies",
+          "duration": "30:03",
+          "id": "NUvQnxndZzU"
+        },
+        {
+          "title": "Earning 1 CRORE+ At The Age of 18 | The 1% Club Show | Ep. 17",
+          "duration": "21:26",
+          "id": "ICt1i7JOV-U"
+        },
+        {
+          "title": "The CEO Challenge (Class 11 & 12) Ft. Ashneer Grover | Ep.1 | UG Programme in Tech & Business Mgmt",
+          "duration": "17:00",
+          "id": "w7t4BdOZ1Uk"
+        },
+        {
+          "title": "IMT Ghaziabad E-Conclave with Ashneer Grover: Decoding Dhandha",
+          "duration": "58:10",
+          "id": "iNYgu1CgeS8"
+        },
+        {
+          "title": "Where There Is A Wheel, There Is A Way! | Shark Tank India | Full Pitch",
+          "duration": "20:57",
+          "id": "P1oJF3uW4lU"
+        },
+        {
+          "title": "Biggest Ever Investment In Shark Tank History? | Shark Tank India | Full Pitch",
+          "duration": "11:39",
+          "id": "DDYdd--urFM"
+        },
+        {
+          "title": "This Booz Is Definitely Worth A Shot! | Shark Tank India | Full Pitch",
+          "duration": "15:26",
+          "id": "oxszp4u4qK8"
+        }
+      ]
+}

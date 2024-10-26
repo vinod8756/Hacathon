@@ -26,7 +26,7 @@ function NavBar() {
                     <Nav className="me-auto my-2 my-lg-0" navbarScroll>
                         <Nav.Link href="/home" className="text-dark mx-2">Home</Nav.Link>
                         <Nav.Link href="/AboutUs" className="text-dark mx-2">About</Nav.Link>
-                        <Nav.Link href="/services" className="text-dark mx-2">Services</Nav.Link>
+                        <Nav.Link href="/services" className="text-dark mx-2">features</Nav.Link>
                         <Nav.Link href="/ContactUs" className="text-dark mx-2">Contact</Nav.Link>
                         <QuizButton />
                     </Nav>
@@ -38,8 +38,8 @@ function NavBar() {
                             aria-label="Search"
                         />
                         <Button variant="info">Search</Button>
-                        <Link to="/" className="d-flex align-items-center ms-2">
-                            <Button variant="danger" style={{ whiteSpace: "nowrap" }}>
+                        <Link to="/" style={{textDecoration : 'none'}} className="d-flex align-items-center ms-2">
+                            <Button variant="danger" style={{ whiteSpace: "nowrap" ,textDecoration : 'none'}}>
                                 Log Out
                             </Button>
                         </Link>

@@ -1,13 +1,39 @@
+/* MediaPlayer.module.css */
+
 .mediaPlayerContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
+    padding: 20px;
+    background-color: #f4f4f4;
   }
   
-  .videoContainer {
+  .videoPlayer {
     width: 100%;
     max-width: 800px;
+    height: 450px; /* Adjust the height as needed */
     margin: 20px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+  
+  
+  .cameraContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 120px;
+    height: 90px;
+    z-index: 100;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
   
   .nextVideoBtn {
@@ -16,11 +42,53 @@
     background-color: #007bff;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nextVideoBtn:hover {
+    background-color: #0056b3;
   }
   
   .nextVideoInfo {
     margin-top: 20px;
     font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nextVideosList {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nextVideosList h3 {
+    margin: 0 0 10px;
+  }
+  
+  .nextVideosList ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nextVideosList li {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nextVideosList li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .active {
+    background-color: #007bff;
+    color: white;
   }
   

@@ -1,72 +1,38 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import styles from './MediaPlayer.module.css';
 import NavBar from '../NavBar/NavBar';
 import NewFooterSection from '../FooterSection';
+import CameraComponent from '../CameraComponent';
+import YouTubePlayerWithProgress from './YouTubePlayerWithProgress';
+import videoData from '../../data.json'; 
+import { FaCamera } from "react-icons/fa";
 
 const MediaPlayer = () => {
-  const { courseTag, videoId } = useParams(); // Get courseTag and videoId from the route
-  const [videos, setVideos] = useState([]);
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const navigate = useNavigate();
-
-  const authToken = 'pat0VQ0b0WpYOkHt1.46f5645479f12ed6207594bfeab448d7cb6be7da1ebd4348c2386744002f5a38'; // Replace with your actual token
-  const airtableBaseURL = 'https://api.airtable.com/v0/appiirjHzkG1S05iP/Table%202?';
+  const { courseTag } = useParams();
+  const [videos, setVideos] = useState([]); 
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [showCamera, setShowCamera] = useState(true);
 
   useEffect(() => {
-    const fetchVideos = async () => {
-      try {
-        const response = await axios.get(airtableBaseURL, {
-          headers: {
-            Authorization: `Bearer ${authToken}`,
-            'Content-Type': 'application/json',
-          },
-        });
-
-        // Map records to extract relevant fields
-        const records = response.data.records.map((record) => ({
-          id: record.id,
-          ...record.fields,
-        }));
-
-        // Filter videos by the course tag
-        const filteredVideos = records.filter(video => video.course === courseTag);
-        console.log(filteredVideos)
-        setVideos(filteredVideos);
-        
-        // Find the initial video index based on the videoId parameter
-        const initialIndex = filteredVideos.findIndex(video => video.ID === parseInt(videoId));
-        setCurrentVideoIndex(initialIndex);
-      } catch (err) {
-        console.error('Error fetching videos:', err);
-        setError('Failed to fetch video data.');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchVideos();
-  }, [courseTag, videoId, currentVideoIndex]); // Depend on courseTag and videoId
-
-  const handleNextVideo = () => {
-    // Check if there’s a next video
-    if (currentVideoIndex < videos.length - 1) {
-      const nextIndex = currentVideoIndex + 1;
-      const nextVideoId = videos[nextIndex].ID; // Get the next video's ID from `videos`
-      
-      // Update `currentVideoIndex` and navigate to the next video URL
-      setCurrentVideoIndex(nextIndex);
-      navigate(`/view/${courseTag}/${nextVideoId}`);
+    // Trim the courseTag to remove any spaces and convert to the right format
+    const trimmedCourseTag = courseTag.trim();
+    
+    // Check if the courseTag exists in the videoData
+    if (videoData[trimmedCourseTag]) {
+      setVideos(videoData[trimmedCourseTag]);
+      setCurrentVideoIndex(0); // Reset to first video when courseTag changes
+    } else {
+      console.error(`No videos found for courseTag: ${trimmedCourseTag}`);
+      setVideos([]); // Reset videos if courseTag doesn't match
     }
-  };
-  
-  
+  }, [courseTag]);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
+  const handleNextVideo = (index) => {
+    setCurrentVideoIndex(index);
+  };
+
+  const toggleCamera = () => setShowCamera(!showCamera);
 
   const currentVideo = videos[currentVideoIndex];
 
@@ -74,27 +40,30 @@ const MediaPlayer = () => {
     <>
       <NavBar />
       <div className={styles.mediaPlayerContainer}>
-        {currentVideo && (
-          <div className={styles.videoContainer}>
-            <iframe
-              title={currentVideo.title}
-              width="100%"
-              height="400"
-              src={currentVideo.link}
-              allowFullScreen
-            ></iframe>
-            <h2>{currentVideo.title}</h2>
-            <button onClick={handleNextVideo} className={styles.nextVideoBtn}>
-              Next Video
-            </button>
-          </div>
-        )}
-        {currentVideoIndex !== null && currentVideoIndex < videos.length - 1 && (
-          <div className={styles.nextVideoInfo}>
-            <h3>Next Video:</h3>
-            <p>{videos[currentVideoIndex + 1].title}</p>
-          </div>
-        )}
+        <div className={styles.videoPlayer}>
+          {currentVideo && (
+            <YouTubePlayerWithProgress title={currentVideo.title} videoId={currentVideo.id} />
+          )}
+        </div>
+
+        <div className={styles.nextVideosList}>
+          <h3>Next Videos</h3>
+          <ul>
+            {videos.map((video, index) => (
+              <li
+                key={video.id}
+                onClick={() => handleNextVideo(index)}
+                className={index === currentVideoIndex ? styles.active : ''}
+              >
+                {video.title}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className={styles.cameraToggle} onClick={toggleCamera}>
+          {showCamera ? <CameraComponent /> : <FaCamera />}
+        </div>
       </div>
       <NewFooterSection />
     </>

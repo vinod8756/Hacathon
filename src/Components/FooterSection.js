@@ -12,6 +12,8 @@ import github from '../Assests/github.svg'
 import twitter from '../Assests/twitter.svg'
 import googlePlay from '../Assests/google_play.svg'
 import appStore from '../Assests/appleStore.svg'
+import linkdin from '../Assests/linkedIn.svg'
+import youtube from '../Assests/youtube_icon.svg'
 import { useTranslation } from "react-i18next";
 
 function Copyright() {
@@ -25,6 +27,8 @@ function Copyright() {
 const iconList = [
  github,
   twitter,
+  linkdin,
+  youtube
 ];
 
 function NewFooterSection() {

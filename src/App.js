@@ -22,7 +22,7 @@ function App() {
         <Route path="/home" element={<LandingPage />} />
         <Route path='/signup' element={<SignUp/>}/>
         <Route path="/courses/:fieldTag" component={FilteredCourses} />
-        <Route path="/view/:courseTag/:videoId" element={<MediaPlayer />} />
+        <Route path="/:courseTag" element={<MediaPlayer />} />
         <Route path="/AboutUs" element={<AboutUs/>}/>
         <Route path="/ContactUs" element={<ContactUs/>}/>
       </Routes>

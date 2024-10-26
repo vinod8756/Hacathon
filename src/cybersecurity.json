@@ -1,0 +1,129 @@
+{
+    "CyberSecurity": [
+        {
+            "id": "z5nc9MDbvkw",
+            "title": "getting started with cyber security",
+            "duration": "38:19"
+
+        },
+        {
+            "title": "understanding common cyber threats",
+            "duration": "12:23",
+            "id": "awhqnSskWjU"
+        },
+        {
+            "title": "network security basics",
+            "duration": "27:25",
+            "id": "KjN64N6-_Sk"
+        },
+        {
+            "title": "setting up a secure home network",
+            "duration": "26:28",
+            "id": "m4uzeX-ChFw"
+        },
+        {
+            "title": "introduction to firewalls",
+            "duration": "8:32:17",
+            "id": "PIlLdEVZmNE&t=536sw"
+        },
+        {
+            "title": "using antivirus software effectively",
+            "duration": "2:06",
+            "id": "MUo_YMywWJI"
+        },
+        {
+            "title": "understanding encryption techniques",
+            "duration": "13:57",
+            "id": "o_g-M7UBqI8&t=687s"
+        },
+        {
+            "title": "building a basic secure application",
+            "duration": "1:00:45",
+            "id": "8Vsyl5KJFZw"
+        },
+        {
+            "title": "introduction to ethical hacking",
+            "duration": "7:14:29",
+            "id": "3FNYvj2U0HM"
+        },
+        {
+            "title": "using cyber security tools and software",
+            "duration": "2:33",
+            "id": "SW6AE76Pi50"
+        },
+        {
+            "title": "setting up a cyber security lab",
+            "duration": "13:16",
+            "id": "2XLzMb9oZBI"
+        },
+        {
+            "title": "troubleshooting common security issues",
+            "duration": "5:55",
+            "id": "6Nk-G6a19MU"
+        }
+    ],
+    "React_JS": [
+        {
+            "title": "Introduction To React",
+            "duration": "15:57",
+            "id": "MHn66JJH5zs"
+        },
+        {
+            "title": "Understanding Props and PropTypes in React",
+            "duration": "26:02",
+            "id": "xvm3X1oyTL8"
+        },
+        {
+            "title": "React Component Lifecycle & Lifecycle methods",
+            "duration": "15:56",
+            "id": "abjeWy4sZiU"
+        },
+        {
+            "title": "Event Handling",
+            "duration": "7:35",
+            "id": "Znqv84xi8Vs"
+        },
+        {
+            "title": "React Router",
+            "duration": "23:53",
+            "id": "oTIJunBa6MA"
+        },
+        {
+            "title": "Hooks",
+            "duration": "9:15",
+            "id": "esrFnNV5Btc"
+        }
+    ],
+    "Node_JS": [
+        {
+            "title": "Introduction & Setup",
+            "duration": "16:36",
+            "id": "zb3Qk8SG5Ms"
+        },
+        {
+            "title": "Node.js Basics",
+            "duration": "42:43",
+            "id": "OIBIXYLJjsI"
+        },
+        {
+            "title": "Requests & Responses",
+            "duration": "26:53",
+            "id": "DQD00NAUPNk"
+        },
+        {
+            "title": "NPM",
+            "duration": "16:48",
+            "id": "bdHE2wHT-gQ"
+        },
+        {
+            "title": "Express Apps",
+            "duration": "19:08",
+            "id": "Lr9WUkeYSA8"
+        },
+        {
+            "title": "View Engines",
+            "duration": "35:58",
+            "id": "yXEesONd_54"
+        }
+    ]
+}

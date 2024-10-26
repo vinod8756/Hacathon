@@ -144,3 +144,13 @@
         background-position: 200px 0;
     }
 }
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; /* Evenly space items */
+    gap: 16px; /* Space between cards */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px; /* Optional: space around the container */
+}
