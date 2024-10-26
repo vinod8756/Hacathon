@@ -14,7 +14,7 @@ const FilteredCourses = () => {
   const authToken = "pat0VQ0b0WpYOkHt1.46f5645479f12ed6207594bfeab448d7cb6be7da1ebd4348c2386744002f5a38";
   const airtableBaseURL = "https://api.airtable.com/v0/appiirjHzkG1S05iP/Table%202?";
 
-  // Valid fields for filtering
+  // eslint-disable-next-line
   const validFields = ["IT", "SYSTEM DESIGN", "AGRICULTURE", "MANUFACTURING"];
 
   // Duration formatting function
@@ -59,7 +59,7 @@ const FilteredCourses = () => {
     };
 
     fetchData();
-  }, [fieldTag]);
+  }, [fieldTag , validFields]);
 
   return (
     <div className={styles.filteredCoursesContainer}>
