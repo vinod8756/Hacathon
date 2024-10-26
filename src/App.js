@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import LoginForm from "./Components/Login/Login";
+import LandingPage from "./Components/Pages/LandingPage";
+import {  createTheme, ThemeProvider } from "@mui/material/styles";
+import SignUp from "./Components/Signup/Signup";
+import FilteredCourses from "./Components/Pages/FilteredCourses";
+import MediaPlayer from "./Components/Pages/MediaPlayer";
+import './i18n';
+import AboutUs from "./Components/Pages/About";
+import ContactUs from "./Components/Pages/Contact";
+
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={createTheme()}>
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="/home" element={<LandingPage />} />
+        <Route path='/signup' element={<SignUp/>}/>
+        <Route path="/courses/:fieldTag" component={FilteredCourses} />
+        <Route path="/view/:courseTag/:videoId" element={<MediaPlayer />} />
+        <Route path="/AboutUs" element={<AboutUs/>}/>
+        <Route path="/ContactUs" element={<ContactUs/>}/>
+      </Routes>
+      </ThemeProvider>
     </div>
   );
 }

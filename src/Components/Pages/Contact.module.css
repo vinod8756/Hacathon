@@ -1,0 +1,48 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .paragraph {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: #555;
+    margin-right: 15px;
+  }
+  
+  .subHeading {
+    font-size: 1.25rem;
+    color: #444;
+  }
+  
+  .mapContainer {
+    margin-top: 30px;
+  }
+  

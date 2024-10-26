@@ -1,0 +1,146 @@
+.horizontalBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #003366; /* Dark blue background */
+    color: white; /* White text color */
+    padding: 15px; /* Padding inside the bar */
+}
+
+.barItem {
+    font-size: 16px; /* Font size for bar items */
+    cursor: pointer; /* Change cursor on hover */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.barItem:hover {
+    color: #cccccc; /* Lighter color on hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.textContainer {
+    margin-left: 20px;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4A90E2;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.paragraph {
+    font-size: 1.2rem;
+    color: #555;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.subParagraph {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.bannerImage {
+    width: 50%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin-top: -50px;
+    float: right;
+}
+/* LandingPage.module.css */
+
+.chatbotIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .chatbotIcon:hover {
+    transform: scale(1.1);
+  }
+  
+  .iframeContainer {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 80%;
+    max-width: 400px;
+    height: 70vh;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+  }
+  
+  .popularCourses {
+    padding: 20px;
+    text-align: center;
+}
+.coursesContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.shimmerCard {
+    width: 200px;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shimmerThumbnail, .shimmerTitle, .shimmerSubtitle {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+    animation: shimmer 3s infinite;
+}
+
+.shimmerThumbnail {
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.shimmerTitle {
+    height: 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.shimmerSubtitle {
+    height: 15px;
+    width: 80%;
+    border-radius: 4px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: 200px 0;
+    }
+}

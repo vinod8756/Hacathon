@@ -1,0 +1,141 @@
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes buttonHover {
+    0% {
+      background-color: #007bff;
+    }
+    100% {
+      background-color: #0056b3;
+    }
+  }
+  
+  @keyframes textSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .loginFormContainer { 
+    background-image: url('../../Assests/12.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .loginForm {
+    background-color: rgba(255, 255, 255, 0.464);
+    width: 30%;
+    height: 70%;
+    margin: 10%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logoImage {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .submitButton {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    animation: fadeIn 1s ease-out;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    animation: buttonHover 0.3s forwards;
+  }
+  
+  .signupText {
+    text-align: center;
+    margin-top: 10px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .customNavbar {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .customNavbar .navbar-brand,
+  .customNavbar .nav-link {
+    color: white !important;
+  }
+  
+  .customNavbar .nav-link:hover {
+    color: #ccc !important;
+  }
+  
+  .styledbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .styledbutton:hover {
+    animation: buttonHover 0.3s forwards;
+  }
+  
+  .container {
+    width: 50%;
+    padding: 20px;
+    background-color: #2b2b2b00;
+    animation: textSlideIn 1s ease-out;
+  }
+  
+  .welcome {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .text {
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 800px;
+    line-height: 1.6;
+    margin-top: 20px;
+    opacity: 0.9;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
