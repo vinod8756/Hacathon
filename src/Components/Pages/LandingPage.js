@@ -5,6 +5,7 @@ import FooterSection from "../FooterSection";
 import styles from "./LandingPage.module.css";
 import thumbnail from "../../Assests/Front-end.jpg";
 import CourseCard from "../CarousalCard";
+import { FaRobot } from "react-icons/fa";
 
 
 const fields = {
@@ -42,12 +43,16 @@ const fields = {
 const LandingPage = () => {
 
     const [filter , setfilter] = useState(fields.All)
-
+    const [isIframeVisible, setIsIframeVisible] = useState(false);
   
   const handleCategoryClick = (category) => {
     setfilter(category)
 
   };
+  const toggleIframeVisibility = () => {
+    setIsIframeVisible(!isIframeVisible);
+  };
+
 
 
   return (
@@ -84,7 +89,24 @@ const LandingPage = () => {
         ))}
       </div>
 
-      <FooterSection />
+<div className={styles.chatbotIcon} onClick={toggleIframeVisibility}>
+        <FaRobot size={40} color="#333" />
+      </div>
+
+      <div className={styles.chatbotIcon} onClick={toggleIframeVisibility}>
+        <FaRobot size={40} color="#333" />
+      </div>
+
+      {isIframeVisible && (
+        <div className={styles.iframeContainer}>
+          <iframe
+            src="https://www.chatbase.co/chatbot-iframe/hgD7yJ6tYAfDPVu2qlT7R"
+            style={{ width: "100%", height: "100%" }}
+            title="chatbot"
+          ></iframe>
+        </div>
+      )}
+      <FooterSection/>
     </div>
   );
 };
